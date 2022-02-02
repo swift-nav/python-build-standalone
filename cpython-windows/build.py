@@ -55,10 +55,10 @@ CONVERT_TO_BUILTIN_EXTENSIONS = {
     },
     "_decimal": {},
     "_elementtree": {},
-#    "_hashlib": {
-#        "shared_depends_amd64": ["libcrypto-1_1-x64"],
-#        "shared_depends_win32": ["libcrypto-1_1"],
-#    },
+    "_hashlib": {
+        "shared_depends_amd64": ["libcrypto-1_1-x64"],
+        "shared_depends_win32": ["libcrypto-1_1"],
+    },
     "_lzma": {
         "ignore_additional_depends": {"$(OutDir)liblzma$(PyDebugExt).lib"},
         "static_depends": ["liblzma"],
@@ -70,15 +70,15 @@ CONVERT_TO_BUILTIN_EXTENSIONS = {
     "_sqlite3": {"shared_depends": ["sqlite3"], "static_depends": ["sqlite3"]},
     # See the one-off calls to copy_link_to_lib() and elsewhere to hack up
     # project files.
-#    "_ssl": {
-#        "shared_depends_amd64": ["libcrypto-1_1-x64", "libssl-1_1-x64"],
-#        "shared_depends_win32": ["libcrypto-1_1", "libssl-1_1"],
-#        "static_depends_no_project": ["libcrypto_static", "libssl_static"],
-#    },
-#    "_tkinter": {
-#        "ignore_static": True,
-#        "shared_depends": ["tcl86t", "tk86t"],
-#    },
+    "_ssl": {
+        "shared_depends_amd64": ["libcrypto-1_1-x64", "libssl-1_1-x64"],
+        "shared_depends_win32": ["libcrypto-1_1", "libssl-1_1"],
+        "static_depends_no_project": ["libcrypto_static", "libssl_static"],
+    },
+    "_tkinter": {
+        "ignore_static": True,
+        "shared_depends": ["tcl86t", "tk86t"],
+    },
     "_queue": {},
     "_uuid": {"ignore_missing": True},
     "_zoneinfo": {"ignore_missing": True},
