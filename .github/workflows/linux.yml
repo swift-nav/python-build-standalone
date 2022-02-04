@@ -108,6 +108,7 @@ jobs:
         run: |
           chmod +x sccache
           ./sccache --start-server
+          aws s3 ls $SCCACHE_BUCKET/
 
       - name: Build
         run: |
